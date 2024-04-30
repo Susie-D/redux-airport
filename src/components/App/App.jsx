@@ -7,7 +7,6 @@ function App() {
     <div>
       <h1>Redux Airport</h1>
       <AirportForm />
-      <AirportList />
     </div>
   );
 }

@@ -1,9 +1,9 @@
 function AirportList({ airline }) {
   return (
     <>
-      <tbody>
-        <tr>{airline}</tr>
-      </tbody>
+      <ul>
+        <li key={airline}>{airline}</li>
+      </ul>
     </>
   );
 }

@@ -17,7 +17,7 @@ function AirportForm() {
   };
 
   return (
-    <>
+    <div>
       <input
         value={airlineInput}
         placeholder="Airline Name"
@@ -26,13 +26,16 @@ function AirportForm() {
       />
       <button onClick={addAirline}>Add Airline</button>
 
-      <thead>
-        <th>Airplane Names</th>
-      </thead>
+      <h2>Airplane Names</h2>
+
       {airlines.map((airline) => {
-        return <AirportList airline={airline} />;
+        return (
+          <>
+            <AirportList airline={airline} />
+          </>
+        );
       })}
-    </>
+    </div>
   );
 }
 
